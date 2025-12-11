@@ -1,0 +1,110 @@
+body,
+html {
+    height: 100%;
+    background-color: #e5dcc3; 
+    color: #333d29; 
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    text-align: center;
+    background-color: #333d29; /* Primary dark header */
+    color: #b6ad90; /* Creme text */
+    padding-block: 10px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtle section header */
+h2 {
+    padding: 10px 20px;
+    background-color: #a8b88a;
+    border-left: 5px solid rgba(64, 93, 74, 0.9);
+    border-radius: 8px;
+    width: fit-content;
+    margin-left: 2%;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+/* Card */
+.display-formatting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60%;
+    max-width: 500px;
+    margin: 40px auto;
+
+    padding: 48px;
+
+    border-radius: 8px;
+    border: 10px solid #b6ad90;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+hr {
+    height: 20px;
+    background-color: #405d4a;
+    margin: 5px 0;
+}
+
+#email_account,
+#pwd_account
+ {
+    margin: 0 0 12px 0;
+    text-align: center;
+    pointer-events: none;
+}
+
+#Biometric, #PIN
+ {
+    margin: 0 0 -15px 0;
+    text-align: center;
+    ;
+}
+button {
+    display: block;
+    align-self: center;
+    width: 75%;
+    margin-top: 16px;
+    padding: 8px 10px;
+    background: #7f4f24;
+    color: #b6ad90;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #6a3f1d;
+}
+
+button:active {
+    background: #56321a;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b6ad90; /* Neutral creme */
+    color: #333d29; /* Primary dark text */
+    padding-block: 10px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+    margin-top: auto; /* sticks naturally if page is short */
+}
