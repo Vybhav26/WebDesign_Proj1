@@ -15,6 +15,13 @@
     position: relative;
 }
 
+.logo{
+    width:20%;
+    height: auto;
+    filter: /*sepia(20%) /*saturate(0%)*/ brightness(100%) /*hue-rotate(180deg)*/;
+
+}
+
 .hero-section::before {
     content: '';
     position: absolute;

@@ -6,23 +6,35 @@ html {
     font-family: 'Arial', sans-serif;
 }
 
+  .header-logo {
+            position: absolute;
+            right: 20px;
+            top: 3.5%;
+            transform: translateY(-10%);
+            height: 60px;
+            width: auto;
+            filter: brightness(100%);
+        }
+
+
 header {
     text-align: center;
     background-color: #333d29; 
     color: #b6ad90;
     padding-block: 10px;
     font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.5);
 }
 
 
 .cart-icon {
     display: flex;
-    align-items: center;
+    align-items: left;
     float: left;
     width: 7.5%;
     height: 7.5%;
-    transform: translateY(20%);
+    padding: 0px 15px;
+    margin-left: -9.75%;
     vertical-align: middle;
 }
 

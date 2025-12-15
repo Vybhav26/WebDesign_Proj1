@@ -26,6 +26,25 @@
     transition: transform 0.2s ease;
 }
 
+#header-logo {
+    width: 7.5%;
+    height: auto;
+
+    position: relative;
+    top: 95px;
+    right: 10px;
+    z-index: 1001;
+       padding: 12px 20px;
+          display: flex;
+    align-items: center;
+    gap: 10px;
+ 
+
+
+        filter: /*sepia(20%) /*saturate(0%)*/ brightness(100%) /*hue-rotate(180deg)*/;
+
+} 
+
 .menu-toggle-label:hover {
     transform: scale(1.03);
 }
