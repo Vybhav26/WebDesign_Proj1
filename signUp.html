@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>WebPage</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="menu.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+           <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-toggle-label">
+        <div class="menu-toggle-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <span class="menu-toggle-text">Menu</span>
+    </label>
+
+    <label for="menu-toggle" class="overlay"></label>
+
+    <div class="side-menu">
+    
+        <a href="index.html" class="menu-item">
+            <span class="menu-item-text">Home</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+
+        <a href="account.html" class="menu-item">
+            <span class="menu-item-text">Account</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+        <a href="signIn.html" class="menu-item">
+            <span class="menu-item-text">Sign In</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+        <a href="credentials.html" class="menu-item">
+            <span class="menu-item-text">Meet our Team!</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+   
+        <a href="cart.html" class="menu-item">
+            <span class="menu-item-text">Cart</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+
+        <div class="log-out">
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+
+        <header>
+             <a href="#"><img class="header-logo" src="imgs/logo (1).svg" alt="Logo" /></a>
+
+            <h1 id="header">Sign Up</h1>
+        </header>
+        <main>
+            <div class="signup-section" id="signup1">
+                <div class="signup-container">
+                    <form id="signupForm" novalidate>
+                        <h2>Create an account</h2>
+
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" placeholder="Jane Doe" />
+                        <div class="error" id="nameError"></div>
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" />
+                        <div class="error" id="emailError"></div>
+
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="At least 8 characters" />
+                        <div class="error" id="passwordError"></div>
+
+                        <label for="confirm">Confirm password</label>
+                        <input id="confirm" name="confirm" type="password" placeholder="Repeat your password" />
+                        <div class="error" id="confirmError"></div>
+
+                        <label class="checkbox">
+                            <input id="terms" name="terms" type="checkbox" />
+                            <p>I agree to the <a href="#"> terms</a></p>
+                        </label>
+                        <div class="error" id="termsError"></div>
+
+                        <button type="submit" class="Button">Sign up</button>
+
+                        <p class="muted">Already have an account? <a href="signIn.html">Sign in</a></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>Email</p>
+            <h3>Footer</h3>
+            <p>Phone</p>
+        </footer>
+    </div>
+</body>
+
+</html>

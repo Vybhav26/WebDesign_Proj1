@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product Ordering Page</title>
+    <link href="order.css" rel="stylesheet" type="text/css" />
+            <link href="menu.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-toggle-label">
+        <div class="menu-toggle-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        
+        </div>
+        <span class="menu-toggle-text">Menu</span>
+    </label>
+
+    <label for="menu-toggle" class="overlay"></label>
+
+    <div class="side-menu">
+    
+        <a href="index.html" class="menu-item">
+            <span class="menu-item-text">Home</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+
+        <a href="account.html" class="menu-item">
+            <span class="menu-item-text">Account</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+        <a href="signIn.html" class="menu-item">
+            <span class="menu-item-text">Sign In</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+        <a href="credentials.html" class="menu-item">
+            <span class="menu-item-text">Meet our Team!</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+   
+        <a href="cart.html" class="menu-item">
+            <span class="menu-item-text">Cart</span>
+            <div class="menu-item-icon"></div>
+        </a>
+
+
+        <div class="log-out">
+            <a href="#">Log Out</a>
+        </div>
+    </div>
+
+
+
+
+    <header>
+        <h1>Order</h1>
+        <a href="#"><img class="header-logo" src="imgs/logo (1).svg" alt="Logo" /></a>
+    </header>
+
+</hr>
+
+
+    <section class="product-frame">
+        <figure>
+            <img id="product-img" src="imgs/UBLSpeaker.png" alt="Product image" />
+            
+        </figure>
+        <p class="product-price">$99.99</p>
+    </section>
+
+
+    <section class="display-formatting">
+        <form action="submit_order.html" method="post">
+
+
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="email_account">Email:</label>
+                <input id="email_account" name="email" type="email" placeholder="you@example.com" required />
+
+                <label for="pwd_account">Password:</label>
+                <input id="pwd_account" name="password" type="password" placeholder="At least 8 characters" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Options</legend>
+
+                <label for="color">Color:</label>
+                <label><input type="radio" name="color" value="Blue" required /> Blue</label>
+                <label><input type="radio" name="color" value="Green" /> Green</label>
+                <label><input type="radio" name="color" value="Red" /> Red</label>
+
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1" max="99" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Options</legend>
+                <label><input type="checkbox" name="gift_wrap" /> Gift wrap</label>
+                <label><input type="checkbox" name="newsletter" /> Subscribe to newsletter</label>
+            </fieldset>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>Email</p>
+        <h3>Footer - Image from Copilot</h3>
+        <p>Phone</p>
+    </footer>
+
+</div>
+</body>
+
+</html>
